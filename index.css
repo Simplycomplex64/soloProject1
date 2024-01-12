@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: violent;
+    src: url(fonts/ultraviolent-bb.regular.ttf);
+}
+
+.head{
+    background-color: black;
+    text-align: center;
+    border-bottom:3px solid white;
+}
+
+.div-container{
+    display: flex;
+    justify-content:center;
+    gap: 25px;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+
+}
+
+.content{
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.content h2{
+    font-size: 5em;
+    position: absolute;
+    font-family:violent;
+    width: 100%;
+}
+
+.content h2:nth-child(1){
+    color: black;
+    -webkit-text-stroke: 3px black;
+    text-shadow: 0 0 5px white;
+}
+
+.content h2:nth-child(2){
+   color: red;
+   -webkit-text-stroke: 3px black;
+   animation: vagues 4s ease-in-out infinite;
+   
+}
+
+@keyframes vagues{
+    0%{
+        clip-path: polygon(0 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
+    }
+    100%{
+        clip-path: polygon(0 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0 100%);
+    }
+}
+
+.head h3{
+    margin-top: 0;
+    position: relative;
+    top: 10px;
+    font-size: 35px;
+    height: auto;
+    padding:10px 0;
+    color: red;
+    animation: apparition 1s ease-in-out;
+}
+
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translatey(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+.news-square{
+    background-image: url(https://cloudfront-us-east-2.images.arcpublishing.com/reuters/WT3CYKT2ONKKBEYF7X3KU44ZKA.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 490px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#news-square2{
+    background-image: url(https://thenorthlines.com/wp-content/uploads/2023/10/GettyImages-1583881075.jpg);
+}
+
+#news-square3{
+    background-image: url(https://loving-shepherd.org/wp-content/uploads/2022/11/ND-Picture.jpg);
+}
+
+.chest{
+    background-color: red;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 10px 10px;
+    border-top: 3px solid white;
+    border-bottom: 5px solid black;
+}
+
+.chest h1{
+    font-size: 50px;
+    margin: 0 0 10px 0;
+}
+
+.activity-container {
+    background-color: rgb(79, 79, 81);
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    border-radius: 10px;padding: 10px;
+    gap: 10px;
+}
+
+.activity{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 10px;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.activity img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.activity h1{
+    margin:0;
+}
+
+.span1{
+    margin-top: 0;
+}
+
+.forP{
+    width: 95%;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    overflow-x: hidden;
+    margin: 10px 0;
+}
+
+.forP p{
+    position: relative;
+    margin: 3px 10px;
+}
+
+.guide-container{
+    padding: 20px;
+    height: auto;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: bisque;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+    width: 40%;
+    height: 300px;
+    border: 3px solid black;
+}
+
+.img-me{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    width: 200px;
+}
+
+.text-content{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(2, 2, 2);
+    width: 20%;
+    text-align: center;
+    padding: 0 5px 10px 5px;
+    width: 70%;
+    border: 3px solid black;
+}
+
+.text-content h1{
+    background-color: gray;
+    text-shadow: 0 0 2px rgb(249, 248, 248);
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.text-content p{
+    font-size: 18px;
+    border-radius: 8px;
+    font-style: italic;
+    margin: 0 20px;
+}
+.img-me img{
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.img-me img:hover{
+    transform: rotate(360deg);
+}
+
+.text-content span{
+    background-color: gray;
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+    padding: 3px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-shadow: 0 0 2px rgb(249, 248, 248);
+}
